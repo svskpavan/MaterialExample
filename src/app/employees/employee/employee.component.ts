@@ -16,7 +16,11 @@ export class EmployeeComponent implements OnInit {
     {id:3, value: "Dep 3"}
   ];
   
-  
+  onClick(){
+    this.service.form.reset();
+    this.service.form.initializeFormGroup();
+
+  }
 
   ngOnInit() {
   }

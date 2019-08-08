@@ -18,4 +18,18 @@ export class EmployeeService {
 
   });
 
+  initializeFormGroup(){
+    this.form.setValue({
+      $key: null,
+      fullName: '',
+      email: '',
+      mobile: '',
+      city: '',
+      gender: '1',
+      department: 0,
+      hireDate: '',
+      isPermanent: false
+    });
+  }
+
 }
